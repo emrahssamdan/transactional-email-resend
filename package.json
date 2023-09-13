@@ -9,11 +9,16 @@
     "start": "ampt"
   },
   "dependencies": {
+    "@ampt/data": "^0.0.1-beta.19",
     "@ampt/sdk": "latest",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "resend": "^1.0.0"
   },
   "ampt": {
     "app": "transactional-email-resend",
     "org": "emrah"
-  }
+  },
+  "files": [
+    "*"
+  ]
 }
