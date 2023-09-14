@@ -24,7 +24,7 @@ api.post("/signup", async (req, res) => {
 data.on("created:user_*", async(event) => {
   const record = event.item.value;
   resend.emails.send({
-    from: 'notifications@emrahsamdan.com',
+    from: params("SENDER_EMAIL"),
     to: record.email,
     subject: 'Hello ' + record.firstName + " with Resend!",
     html: '<p>Welcome to my tiny SaaS <strong>' + record.firstName + ' ' + record.lastName + '</strong>!</p>'
